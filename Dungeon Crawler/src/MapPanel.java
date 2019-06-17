@@ -88,14 +88,14 @@ public class MapPanel extends JPanel {
                 switch (map[j][i])
                 {
                     case 0:
-                        panel.setBackground(Color.DARK_GRAY);
+                        panel.setBackground(Color.WHITE);
                         break;
                     case 1:
-                        panel.setBackground(Color.WHITE);
+                        panel.setBackground(Color.DARK_GRAY);
                         break;
                     case 2:
                         JLabel label = new JLabel();
-                        panel.setBackground(Color.DARK_GRAY);
+                        panel.setBackground(Color.WHITE);
                         switch (FirstPersonPanel.getPlayerDirection())
                         {
                         case "N":

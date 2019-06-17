@@ -5,6 +5,7 @@ import java.awt.Color;
 import javax.swing.ImageIcon;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.GridLayout;
 
 public class PartyMemberPanel extends JPanel {
 
@@ -16,6 +17,13 @@ public class PartyMemberPanel extends JPanel {
         setLayout(null);
         
         JButton btnFace = new JButton("");
+        btnFace.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                
+            }
+        });
         JProgressBar HealthBar = new JProgressBar();
         JProgressBar ManaBar = new JProgressBar();
         JButton btnLeftHand = new JButton("");
@@ -23,7 +31,7 @@ public class PartyMemberPanel extends JPanel {
         JButton btnX = new JButton("X");
         
         
-        btnFace.setIcon(new ImageIcon("C:\\Users\\Tommy\\workspace\\Dungeon Crawler\\Dantes.gif"));
+        btnFace.setIcon(new ImageIcon("C:\\Users\\Tommy\\git\\Java-Dungeon-Crawler\\Dungeon Crawler\\Dantes.gif"));
         btnFace.setBounds(0, 25, 82, 82);
         add(btnFace);
         
@@ -64,6 +72,102 @@ public class PartyMemberPanel extends JPanel {
         
         btnX.setBounds(132, 0, 60, 23);
         add(btnX);
+        
+        JPanel runePanel = new JPanel();
+        runePanel.setBounds(0, 25, 192, 165);
+        runePanel.setVisible(false);
+        add(runePanel);
+        runePanel.setLayout(new GridLayout(3, 3, 0, 0));
+        
+        JButton btnRune1 = new JButton("New button");
+        btnRune1.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent arg0)
+            {
+                
+            }
+        });
+        runePanel.add(btnRune1);
+        
+        JButton btnRune2 = new JButton("New button");
+        btnRune2.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                
+            }
+        });
+        runePanel.add(btnRune2);
+        
+        JButton btnRune3 = new JButton("New button");
+        btnRune3.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                
+            }
+        });
+        runePanel.add(btnRune3);
+        
+        JButton btnRune4 = new JButton("New button");
+        btnRune4.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                
+            }
+        });
+        runePanel.add(btnRune4);
+        
+        JButton btnRune5 = new JButton("New button");
+        btnRune5.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                
+            }
+        });
+        runePanel.add(btnRune5);
+        
+        JButton btnRune6 = new JButton("New button");
+        btnRune6.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                
+            }
+        });
+        runePanel.add(btnRune6);
+        
+        JButton btnRune7 = new JButton("New button");
+        btnRune7.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                
+            }
+        });
+        runePanel.add(btnRune7);
+        
+        JButton btnRune8 = new JButton("New button");
+        btnRune8.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                
+            }
+        });
+        runePanel.add(btnRune8);
+        
+        JButton btnRune9 = new JButton("New button");
+        btnRune9.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                
+            }
+        });
+        runePanel.add(btnRune9);
 
     }
 }
